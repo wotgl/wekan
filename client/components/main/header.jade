@@ -58,9 +58,6 @@ template(name="header")
           a.wekan-logo(href="{{pathFor 'home'}}" title="{{_ 'header-logo-title'}}")
             img(src="{{pathFor '/wekan-logo-header.png'}}" alt="Wekan")
 
-  if appIsOffline
-    +offlineWarning
-
   if currentUser.isBoardMember
     if hasAnnouncement
       .announcement
